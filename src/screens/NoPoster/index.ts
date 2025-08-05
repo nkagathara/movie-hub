@@ -1,0 +1,1 @@
+export { NoPoster } from "./NoPoster";
