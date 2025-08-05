@@ -1,5 +1,6 @@
 import { Search, Bell, User } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import movieHubIcon from '../assets/images/movie-hub-icon.png';
 
 export const Header = () => {
   const location = useLocation();
@@ -10,12 +11,12 @@ export const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">M</span>
             </div>
             <span className="text-white font-bold text-xl">MovieHub</span>
-          </div>
+          </Link>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
